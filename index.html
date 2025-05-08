@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Budget Calculator</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Your Own Personal Finance Calculator</h1>
+
+    <label>Income: $<input type="number" id="income" /></label>
+
+    <h2>Fixed Expenses</h2>
+    <label>Rent: $<input type="number" id="rent" /></label>
+    <label>Food/Groceries: $<input type="number" id="food" /></label>
+    <label>Utilities: $<input type="number" id="utilities" /></label>
+    <label>Other: $<input type="number" id="other" /></label>
+
+    <h3>Custom Expenses</h3>
+    <div id="custom-expenses"></div>
+    <button type="button" onclick="addCustomExpense()">+ Add Expense Category</button>
+
+    <label for="chartType">Chart Type:</label>
+<select id="chartType">
+  <option value="pie">Pie Chart</option>
+  <option value="bar">Bar Chart</option>
+  <option value="line">Line Graph</option>
+</select>
+    <button onclick="calculateBudget()">Calculate</button>
+
+    <div id="results"></div>
+
+    <canvas id="myPieChart" width="400" height="400"></canvas>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

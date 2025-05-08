@@ -1,0 +1,137 @@
+/* Global Styles */
+body {
+    background: #f0f4f8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #2d3748;
+  }
+  
+  /* Main Container */
+  .container {
+    max-width: 960px; /* Wider for web */
+    margin: 60px auto;
+    background: #ffffff;
+    padding: 60px 60px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .container:hover {
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Headings */
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #1a202c;
+  }
+  
+  h2, h3 {
+    font-size: 1.5rem;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    color: #4a5568;
+    text-align: center;
+  }
+  
+  /* Labels and Inputs */
+  label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+  
+  input[type="number"] {
+    flex: 1;
+    padding: 12px;
+    margin-left: 15px;
+    border: 1px solid #cbd5e0;
+    border-radius: 8px;
+    background-color: #f9fafb;
+    font-size: 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  input:focus {
+    border-color: #38a169;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(56, 161, 105, 0.2);
+  }
+  
+  /* Buttons */
+  button {
+    margin-top: 30px;
+    padding: 16px;
+    width: 100%;
+    background: #38a169;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background: #2f855a;
+    transform: translateY(-1px);
+  }
+  
+  /* Results Box */
+  #results {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #2f855a;
+  }
+  
+  /* Custom Expense Section */
+  #custom-expenses {
+    margin-top: 20px;
+  }
+  
+  #custom-expenses label {
+    margin-top: 12px;
+  }
+  
+  /* Chart */
+  canvas {
+    display: block;
+    margin: 50px auto 0;
+    max-width: 100%;
+  }
+  
+  /* Responsive Layout for Smaller Screens */
+  @media (max-width: 768px) {
+    .container {
+      padding: 30px 20px;
+    }
+  
+    h1 {
+      font-size: 1.8rem;
+    }
+  
+    h2, h3 {
+      font-size: 1.3rem;
+    }
+  
+    label {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    input[type="number"] {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
+  
